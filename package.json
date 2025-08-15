@@ -1,0 +1,168 @@
+{
+  "name": "smart-commits",
+  "displayName": "Smart Commits",
+  "description": "Generate high-quality Git commit messages using AI or templates with beautiful UI",
+  "version": "0.1.0",
+  "publisher": "mzainulabideen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZainulabdeenOfficial/Smart_Commit_Message_Generator_Vscode_Extention.git"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "ai",
+    "openai",
+    "conventional-commits",
+    "scm",
+    "productivity"
+  ],
+  "icon": "icons/icon.png",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "SCM Providers",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:smartCommit.generateMessage",
+    "onCommand:smartCommit.commit"
+  ],
+  "main": "./out/extension.js",
+      "contributes": {
+      "commands": [
+        {
+          "command": "smartCommit.generateMessage",
+          "title": "Generate Smart Commit Message",
+          "category": "Smart Commits",
+          "icon": "$(lightbulb)"
+        },
+        {
+          "command": "smartCommit.commit",
+          "title": "Generate and Commit",
+          "category": "Smart Commits",
+          "icon": "$(check)"
+        },
+        {
+          "command": "smartCommit.openSettings",
+          "title": "Open Smart Commits Settings",
+          "category": "Smart Commits",
+          "icon": "$(gear)"
+        },
+        {
+          "command": "smartCommit.toggleAI",
+          "title": "Toggle AI Mode",
+          "category": "Smart Commits",
+          "icon": "$(brain)"
+        }
+      ],
+      "menus": {
+        "commandPalette": [
+          {
+            "command": "smartCommit.generateMessage",
+            "when": "gitOpenRepositoryCount > 0"
+          },
+          {
+            "command": "smartCommit.commit",
+            "when": "gitOpenRepositoryCount > 0"
+          }
+        ],
+        "editor/title": [
+          {
+            "command": "smartCommit.generateMessage",
+            "when": "gitOpenRepositoryCount > 0",
+            "group": "navigation"
+          }
+        ]
+      },
+    "configuration": {
+      "title": "Smart Commits",
+      "properties": {
+        "smartCommit.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "OpenAI API key for AI-powered commit message generation"
+        },
+        "smartCommit.usePublicKey": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use public OpenAI key for testing (limited functionality)"
+        },
+        "smartCommit.apiEndpoint": {
+          "type": "string",
+          "default": "https://api.openai.com/v1/chat/completions",
+          "description": "API endpoint for commit message generation"
+        },
+        "smartCommit.model": {
+          "type": "string",
+          "default": "gpt-3.5-turbo",
+          "description": "AI model to use for commit message generation"
+        },
+        "smartCommit.suggestions": {
+          "type": "number",
+          "default": 3,
+          "description": "Number of AI suggestions to generate"
+        },
+        "smartCommit.useAI": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use AI for commit message generation (false for template mode)"
+        },
+        "smartCommit.uiTheme": {
+          "type": "string",
+          "enum": ["auto", "light", "dark"],
+          "default": "auto",
+          "description": "UI theme for Smart Commits interface"
+        },
+        "smartCommit.showStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Smart Commits status in the status bar"
+        },
+        "smartCommit.autoSuggest": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically suggest commit messages when staging files"
+        },
+        "smartCommit.customTemplates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Custom commit message templates"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "echo \"Tests not yet implemented\""
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/glob": "^8.0.0",
+    "@vscode/test-electron": "^2.3.0",
+    "mocha": "^10.0.0",
+    "glob": "^10.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ZainulabdeenOfficial/Smart_Commit_Message_Generator_Vscode_Extention/issues"
+  },
+  "homepage": "https://github.com/ZainulabdeenOfficial/Smart_Commit_Message_Generator_Vscode_Extention#readme",
+  "license": "MIT"
+} 

@@ -3,13 +3,10 @@
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=mzainulabideen.smart-commits)
 [![Downloads](https://img.shields.io/badge/downloads-0-brightgreen.svg)](https://marketplace.visualstudio.com/items?itemName=mzainulabideen.smart-commits)
 [![Rating](https://img.shields.io/badge/rating-0.0-yellow.svg)](https://marketplace.visualstudio.com/items?itemName=mzainulabideen.smart-commits)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ZainulabdeenOfficial/Smart_Commit_Message_Generator_Vscode_Extention/blob/main/LICENSE)
 
 ## 🚀 **Generate Professional Git Commit Messages with AI**
 
 Smart Commits is a powerful VS Code extension that generates high-quality, conventional commit messages using AI or intelligent templates. Say goodbye to generic commit messages and hello to professional, meaningful commits!
-
-**[📦 Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=mzainulabideen.smart-commits)**
 
 ## ✨ **Features**
 
@@ -43,7 +40,6 @@ Smart Commits is a powerful VS Code extension that generates high-quality, conve
 ### 1. **Install the Extension**
 - Search for "Smart Commits" in VS Code Extensions
 - Click Install
-- Or install directly: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=mzainulabideen.smart-commits)
 
 ### 2. **Configure AI (Optional)**
 - Open VS Code Settings (`Ctrl+,`)
@@ -207,55 +203,13 @@ Added detailed setup guide for new users. Included troubleshooting section.
 - **Quality Improvement**: Better, more descriptive commits
 - **Team Collaboration**: Clear, meaningful commit history
 
-## 🏗️ **Development**
-
-### **Prerequisites**
-- Node.js 16+ 
-- VS Code 1.74.0+
-- Git
-
-### **Setup**
-```bash
-# Clone the repository
-git clone https://github.com/ZainulabdeenOfficial/Smart_Commit_Message_Generator_Vscode_Extention.git
-cd Smart_Commit_Message_Generator_Vscode_Extention
-
-# Install dependencies
-npm install
-
-# Compile the extension
-npm run compile
-
-# Run in development mode
-# Press F5 in VS Code
-```
-
-### **Build**
-```bash
-# Compile TypeScript
-npm run compile
-
-# Package extension
-npm run package
-
-# Publish to marketplace
-npm run publish
-```
-
 ## 🤝 **Contributing**
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### **How to Contribute**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+We welcome contributions! Please see our [Contributing Guide](https://github.com/ZainulabdeenOfficial/Smart_Commit_Message_Generator_Vscode_Extention/blob/main/CONTRIBUTING.md) for details.
 
 ## 📄 **License**
 
-This extension is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This extension is licensed under the MIT License. See [LICENSE](https://github.com/ZainulabdeenOfficial/Smart_Commit_Message_Generator_Vscode_Extention/blob/main/LICENSE) for details.
 
 ## 🐛 **Support**
 
@@ -266,48 +220,10 @@ This extension is licensed under the MIT License. See [LICENSE](LICENSE) for det
 ## ⭐ **Rate & Review**
 
 If you find Smart Commits helpful, please consider:
-- ⭐ **Rating** the extension on the [marketplace](https://marketplace.visualstudio.com/items?itemName=mzainulabideen.smart-commits)
+- ⭐ **Rating** the extension on the marketplace
 - 📝 **Writing a review** to help others
 - 🚀 **Sharing** with your team
 
-## 📊 **Project Structure**
-
-```
-Smart_Commit_Message_Generator_Vscode_Extention/
-├── src/
-│   ├── extension.ts              # Main extension entry point
-│   ├── gitService.ts             # Git operations and diff handling
-│   ├── commitMessageGenerator.ts # AI and template message generation
-│   ├── commitValidator.ts        # Commit message validation
-│   └── uiService.ts              # Beautiful UI service
-├── icons/
-│   ├── icon.png                  # Extension icon
-│   └── README.md                 # Icon documentation
-├── out/                          # Compiled JavaScript
-├── package.json                  # Extension manifest
-├── tsconfig.json                 # TypeScript configuration
-├── README.md                     # This file
-├── LICENSE                       # MIT License
-└── .vscodeignore                 # Files to exclude from package
-```
-
-## 🎯 **Roadmap**
-
-- [ ] **Enhanced AI Models**: Support for more AI providers
-- [ ] **Team Templates**: Share templates across team
-- [ ] **Commit History**: Learn from previous commits
-- [ ] **Integration**: Support for more Git platforms
-- [ ] **Mobile**: VS Code for Web support
-
-## 🙏 **Acknowledgments**
-
-- **VS Code Team**: For the amazing extension API
-- **OpenAI**: For providing powerful AI models
-- **Conventional Commits**: For the commit message standard
-- **Community**: For feedback and contributions
-
 ---
 
-**Transform your Git workflow with Smart Commits - where AI meets beautiful design!** 🚀✨
-
-**[📦 Install Now](https://marketplace.visualstudio.com/items?itemName=mzainulabideen.smart-commits)**
+**Transform your Git workflow with Smart Commits - where AI meets beautiful design!** 🚀✨ 
