@@ -210,47 +210,44 @@ Added detailed setup guide for new users. Included troubleshooting section.
 ## 🏗️ **Development**
 
 ### **Prerequisites**
-- Node.js 16+ 
-- VS Code 1.74.0+
-- Git
+# Smart_Commit_Message_Generator_Vscode_Extention
 
-### **Setup**
-```bash
-# Clone the repository
-git clone https://github.com/ZainulabdeenOfficial/Smart_Commit_Message_Generator_Vscode_Extention.git
-cd Smart_Commit_Message_Generator_Vscode_Extention
+# Smart Commits - VS Code Extension
 
-# Install dependencies
-npm install
+Generate high-quality Git commit messages using AI or templates, following Conventional Commit format.
 
-# Compile the extension
-npm run compile
+## Features
 
-# Run in development mode
-# Press F5 in VS Code
-```
+- 🤖 **AI-Powered Generation**: Uses OpenAI API to generate intelligent commit messages
+- 📝 **Template Mode**: Fallback template-based generation for offline use
+- ✅ **Commit Validation**: Ensures messages follow Conventional Commit format
+- 🎯 **Auto Scope Detection**: Automatically detects scope from changed file paths
+- 🔄 **Multiple Suggestions**: Choose from 3 AI-generated options
+- ⚙️ **Configurable**: Customize API settings, model, and behavior
 
-### **Build**
-```bash
-# Compile TypeScript
-npm run compile
+## Installation
 
-# Package extension
-npm run package
+1. Clone this repository
+2. Install dependencies: `npm install`
+3. Compile the extension: `npm run compile`
+4. Press `F5` in VS Code to run the extension in development mode
 
-# Publish to marketplace
-npm run publish
-```
+## Usage
 
-## 🤝 **Contributing**
+### Commands
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+- **Generate Smart Commit Message**: Generates commit message suggestions for staged changes
+- **Generate and Commit**: Generates suggestions and commits immediately after selection
 
-### **How to Contribute**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+### Workflow
+
+1. Make your code changes
+2. Stage the changes: `git add .`
+3. Run the command: `Ctrl+Shift+P` → "Generate Smart Commit Message"
+4. Select from the generated suggestions
+5. Edit if needed and confirm
+
+### Example Output
 5. Open a Pull Request
 
 ## 📄 **License**
