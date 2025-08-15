@@ -1,0 +1,1 @@
+# Smart_Commit_Message_Generator_Vscode_Extention
