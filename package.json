@@ -2,7 +2,7 @@
   "name": "smart-commits",
   "displayName": "Smart Commits",
   "description": "Generate high-quality Git commit messages using AI or templates with beautiful UI",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "mzainulabideen",
   "repository": {
     "type": "git",
